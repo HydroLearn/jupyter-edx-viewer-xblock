@@ -79,7 +79,7 @@ def preprocess(nb, processors):
 def postprocess(raw_html):
     """Post-processes raw html"""
     html = remove_box_shadow(raw_html)
-    html = insert_target_blank(html)
+    html = insert_target_blank(html).encode('utf-8')
     return html
 
 

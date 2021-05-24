@@ -37,7 +37,13 @@ setup(
     entry_points={
         'xblock.v1': [
             'xblock_jupyter_viewer = xblock_jupyter_viewer:JupyterViewerXBlock',
-        ]
+        ],
+        # "lms.djangoapp": [
+        #     "xblock_jupyter_viewer = xblock_jupyter_viewer:JupyterViewerURLPluginApp"
+        # ],
+        # "cms.djgnaoapp": [
+        #     "xblock_jupyter_viewer = xblock_jupyter_viewer:JupyterViewerURLPluginApp"
+        # ]
     },
     package_data=package_data("xblock_jupyter_viewer", ["static", "public", "rest"]),
 )
