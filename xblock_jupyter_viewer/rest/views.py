@@ -11,6 +11,10 @@ from django.http import HttpResponse
 from xblock_jupyter_viewer.jupyter_utils import process_nb
 from xblock_jupyter_viewer.rest.serializers import NotebookViewSerializer
 
+# potential addon for later CJR 7/12/22
+# from django.views.decorators.clickjacking import xframe_options_exempt
+# @xframe_options_exempt
+
 log = logging.getLogger(__name__)
 
 class NotebookViewer(APIView):
